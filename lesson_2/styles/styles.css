@@ -1,3 +1,78 @@
 body {
   font-family: sans-serif;
 }
+
+
+/* firs flexbox */
+
+.task-one {
+  display: flex;
+  height: 600px;
+  background-color: rgb(123, 233, 102);
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper1 div {
+height: 100px;
+width: 100px;
+background-color: rgb(60, 24, 221);
+margin: 20px;
+color: beige;
+}
+.item-3 {
+  align-self: flex-start;
+}
+.item-2, .item-4 {
+  align-self: center ;
+}
+.item-1, .item-5 {
+  align-self: flex-end;
+}
+
+
+
+/* second flexbox */
+
+.task-two {
+  display: flex;
+  height: 300px;
+  width: 1000px;
+  background-color: rgb(123, 233, 102);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapper2 div {
+height: 100px;
+width: 100px;
+background-color: rgb(60, 24, 221);
+margin: 10px;
+color: beige;
+}
+.item2-9, .item2-8{
+  flex-grow: 1;
+}
+
+
+
+/* third flexbox */
+.task-three {
+  display: flex;
+  height: 340px;
+  width: 660px;
+  background-color: rgb(123, 233, 102);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.wrapper3 div {
+  height: 100px;
+  width: 200px;
+  background-color: rgb(60, 24, 221);
+  margin: 10px;
+  color: rgb(240, 240, 240);
+}
+.wrapper3 .item3-2{
+  height: 200px;
+}
