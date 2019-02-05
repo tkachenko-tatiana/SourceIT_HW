@@ -1,0 +1,33 @@
+body{
+	font-family:sans serif;
+}
+
+.task-one{
+	height: 600px;
+	background-color: white;
+	display: flex;
+	/* flex-wrap:wrap; */
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+
+.wrapper div{
+	height:100px;
+	width:100px;
+	background-color: orange;
+	margin: 10px;
+	color:white;
+}
+.one, .five{
+	align-self:flex-end;
+}
+.three{
+	align-self:flex-start;
+}
+.two, .four{
+	align-self:center;
+	
+}
+
+ 

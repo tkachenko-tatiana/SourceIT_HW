@@ -1,0 +1,35 @@
+body{
+	font-family:sans serif;
+}
+
+.task-one{
+	height: 600px;
+	background-color: white;
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:flex-start;
+}
+
+.wrapper div{
+	height:250px;
+	width:400px;
+	background-color: blue;
+	margin: 10px;
+	color:white;
+}
+.one, .two, .three{
+	align-self:flex-start;
+}
+
+.two{
+	/* flex-grow:1; */
+	min-height:500px;
+}
+.four, .five, .six{
+	/* align-self:flex-end; */
+	
+}
+
+ 
