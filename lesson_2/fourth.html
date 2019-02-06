@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+	<input type="text" id="year" placeholder="year">
+	<button onclick="fun1()"> Compare</button>
+	</div>
+	<script>
+		function fun1(){
+			var a;
+			var b;
+			a=document.getElementById("year").value;
+			a=parseInt(a);
+			b=2019-a;
+			if (b>=16){
+			alert("Welcome!");
+		}
+		else {
+			alert("No access!")
+		}
+		}
+	</script>
+</body>
+</html>
