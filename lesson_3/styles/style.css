@@ -1,0 +1,31 @@
+h1{
+	text-align: center;
+}
+p{
+	width: 600px;
+	margin: 0 auto;
+}
+button{
+	display: block;
+	position: relative;
+	margin: 5% auto 15px;
+	border-radius: 5px;
+	font-size: 18px;	
+	color: #fff;
+	background-color: #0275d8;
+	border-color: #0275d8;
+	padding: 3px 10px;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: #025aa5;
+  border-color: #01549b;
+}
+
+img{
+	max-width: 320px;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+}
