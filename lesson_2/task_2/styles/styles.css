@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+
+.task-one {
+  display: flex;
+  height: 200px;
+  width: 700px;
+  flex-wrap: wrap;
+  }
+
+.task-one div {
+  background-color: orange;
+  width: 60px;
+  height: 80px;
+  margin: 10px;
+}
+.wrapper .eight, .wrapper .nine{
+
+  flex-grow: 1;
+}
+
+.wrapper .nine{
+  justify-self: flex-start;
+}
+.wrapper .nine, .wrapper .eight{
+  background:green;
+}

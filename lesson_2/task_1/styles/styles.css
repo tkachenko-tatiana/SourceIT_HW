@@ -1,0 +1,24 @@
+body {
+  font-family: sans-serif;
+}
+
+.task-one {
+  display: flex;
+  height: 400px;
+}
+
+.task-one div {
+  background-color: #cc0;
+  width: 60px;
+  height: 60px;
+}
+
+.wrapper .one,
+.wrapper .five {
+  align-self: flex-end;
+}
+
+.wrapper .two,
+.wrapper .four {
+  align-self: center;
+}

@@ -1,0 +1,22 @@
+body{
+    font-family: sans-serif;
+}
+.task-one{
+    display: flex;
+    height: 400px;
+    width: 800px;
+    background: white;    
+    align-items: flex-start;
+    flex-wrap: wrap
+    
+}
+.wrapper div{
+    height: 100px;
+    width: 200px;
+    background: rgb(2, 2, 47);
+    margin: 10px;
+    color: white
+}
+.two{
+    min-height: 200px;
+}
