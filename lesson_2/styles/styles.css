@@ -1,3 +1,72 @@
 body {
   font-family: sans-serif;
 }
+
+.task-one {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 400px;
+  background: red;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper div {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+}
+
+
+.one {
+  align-self: flex-end;
+  flex-grow: 0;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+}
+
+.two {
+
+  flex-grow: 0;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+}
+
+.three {
+  align-self: flex-start;
+  flex-grow: 0;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+}
+
+.four {
+
+  flex-grow: 0;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+}
+
+.five {
+  align-self: flex-end;
+  flex-grow: 0;    
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+}
+
