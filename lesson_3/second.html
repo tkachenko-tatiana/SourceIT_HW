@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div>
+	First <input type="text" id="first">
+	Second <input type="text" id="second">
+	<button onclick="fun1()"> Compare</button>
+	<script >
+		function fun1() {
+			var a;
+			var b;
+			a=document.getElementById("first").value;
+			b=document.getElementById("second").value;
+			a=parseInt (a);
+			b=parseInt (b);
+			if (a>b) {
+				alert(a);
+			}
+			else {
+				alert(b);
+			}
+		}
+	</script>
+</div>
+</body>
+</html>
