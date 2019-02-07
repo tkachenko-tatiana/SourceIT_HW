@@ -3,30 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style type="text/css">
+	.taskOne {
+	display: flex;
+	background-color:red;
+	width: 700px;
+	height: 450px;
+    flex-wrap: wrap;
+    }
+    .one,.three,.four,.five,.six {
+    height: 100px;
+    width: 180px;
+    margin: 10px;
+    color :white;
+    background-color: blue;
+    flex-grow: 1;
+    }
+    .two {
+	width: 180px;
+	height: 200px ;
+	margin: 10px;
+	color :white;
+	background-color: blue;
+	flex-grow: 1;
+}
+</style>	
 </head>
 <body>
-	<div>
-	<input type="text" id="room" placeholder="room">
-	<button onclick="fun1()"> Compare</button>
+	<div class="taskOne wrapper">
+	<div class="one">1</div>
+	<div class="two">2</div>
+	<div class="three">3</div>
+	<div class="four">4</div>
+	<div class="five">5</div>
+	<div class="six">6</div>
 	</div>
-	<script>
-		function fun1(){
-			var a;
-			a=document.getElementById("room").value;
-			a=parseInt(a);
-			if (a>=1 && a<20){
-			alert("first");
-		}
-		else if (a>=21 && a<=48) {
-			alert("second");
-		}
-		else if (a>=49 && a<=90) {
-			alert("third");
-		}
-		else {
-			alert("no such room!")
-		}
-		}
-	</script>
 </body>
 </html>

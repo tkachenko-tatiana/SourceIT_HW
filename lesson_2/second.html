@@ -3,28 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style type="text/css">
+	.taskOne {
+	display: flex;
+	background-color:red;
+	flex-wrap: wrap;
+	width: 1400px;
+	height: 450px;
+	}
+	.wrapper div {
+	height: 200px;
+	width: 150px;
+	margin: 10px;
+	color :white;
+	}
+	.one {
+	flex-grow: 1;
+	color: green;
+	background-color: green ;
+	}
+	.two,.three,.four,.five,.six,.seven {
+	flex-grow: 1;
+	background-color: blue ;
+	}
+	.eight {
+	flex-grow: 2;
+	background-color: blue ;
+	}
+	.nine {
+	flex-grow: 12;
+	background-color: green	;
+}
+	</style>
 </head>
 <body>
-<div>
-	First <input type="text" id="first">
-	Second <input type="text" id="second">
-	<button onclick="fun1()"> Compare</button>
-	<script >
-		function fun1() {
-			var a;
-			var b;
-			a=document.getElementById("first").value;
-			b=document.getElementById("second").value;
-			a=parseInt (a);
-			b=parseInt (b);
-			if (a>b) {
-				alert(a);
-			}
-			else {
-				alert(b);
-			}
-		}
-	</script>
-</div>
+	<div class="taskOne wrapper">
+	<div class="one">1</div>
+	<div class="two">2</div>
+	<div class="three">3</div>
+	<div class="four">4</div>
+	<div class="five">5</div>
+	<div class="six">6</div>
+	<div class="seven">7</div>
+	<div class="eight">8</div>
+	<div class="nine">9</div>
+	</div>
 </body>
 </html>
