@@ -42,3 +42,20 @@ let age = prompt('Ваш возраст', '');
 
 (age >= '16') ?
    alert('Добро пожаловать' + ' Вам ' + age + ' лет') : alert('Вход воспрещен' + ' Вам ' + age + ' лет');
+
+
+   
+
+// //fifth task
+
+let x = Number(prompt('Enter x', '')); 
+
+if (x < -2) {
+  alert(3*pow(x, 2) - 8);
+}
+else if (x >= -2 && x <= 4) {
+  alert( -9*pow(x, 2) - 12);
+}
+else {
+  alert(32 + x);
+}
