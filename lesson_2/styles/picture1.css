@@ -1,0 +1,30 @@
+
+.task-one {
+  display: flex;
+  height: 1000px;
+  background: coral;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.wrapper div {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  color: black;
+  background: yellow;
+}
+
+
+.two, .four {
+  align-self: center;
+}
+
+.one, .five {
+  align-self: flex-end;
+}
+
+.three {
+  align-self: flex-start;
+} 
