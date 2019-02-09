@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+	<input type="text" id="equintance" placeholder="equintance">
+	<button onclick="fun1()"> solve </button>
+	</div>
+	<script >
+		function fun1(){
+			let x;
+			x=document.getElementById("equintance").value;
+			x=parseInt(x);
+			if(x<-2){
+				alert(3 * Math.pow(x,2) - 8);
+			}
+			 else if(-2<=x && x<=4) {
+			 	alert(-9 * Math.pow(x,2) - 12);
+			 }
+			  else {
+			   alert(32 + x);
+			    }
+			}
+	</script>
+	
+</body>
+</html>
