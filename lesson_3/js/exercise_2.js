@@ -1,5 +1,5 @@
-let a = prompt('Enter a:');
-let b = prompt('Enter b:');
+let a = +prompt('Enter a:');
+let b = +prompt('Enter b:');
 
 if (a > b) {
     alert('a biggest than b');
