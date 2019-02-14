@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+}
+
+.button-item{
+  display: flex;
+  justify-content: space-around;
+}
+button{
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  background: #6daad9;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  border: 0;
+  border-bottom: 5px solid #366e99;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;  
+}
+button:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+button span{
+  font-size: 14px;
+  font-weight: normal;
+}
+
