@@ -1,6 +1,6 @@
-let a = prompt("Введите a");
+let a = parseInt(prompt("Введите a"));
 
-let b = prompt("Введите b");
+let b = parseInt(prompt("Введите b"));
 
 if (a > b) {
     alert( "a больше b" );

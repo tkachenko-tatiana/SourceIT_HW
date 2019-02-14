@@ -1,9 +1,9 @@
-let a = parseInt(prompt("Введите год рождения"));
+let birthYear = parseInt(prompt("Введите год рождения"));
 
-let b = new Date().getFullYear();
-let c = b - a;
+let currentYear = new Date().getFullYear();
+let age = currentYear - birthYear;
 
-if (c>=16) {
+if (age>=16) {
     alert( "Добро пожаловать" );
 } else  {
     alert( "Вход воспрещен");
