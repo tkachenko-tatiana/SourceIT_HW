@@ -1,0 +1,29 @@
+.box {
+    display: flex;
+    height: 350px;
+    width: 1400px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.wrapper div {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    color: black;
+    background: yellow;
+}
+
+.box-1 {
+    background: green !important;
+}
+
+.box-9 {
+    background: green !important;
+    flex-grow: 1;
+}
+
+.box-8 {
+    flex-grow: 1;
+}
