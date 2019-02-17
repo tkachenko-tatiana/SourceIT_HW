@@ -5,9 +5,8 @@
 // method 1 ====
 const calcNum1 = (num) => {
   let sum = 0;
-  let str = num;
-  for(let i = 0; i < str.length; i++){
-    sum += parseInt(str.charAt(i));
+  for (let i = 0; i < num.length; i++) {
+    sum += +num[i];
   }
   return sum;
 }
@@ -19,10 +18,10 @@ const task1m1 = () => {
 // end
 
 // method 2 ====
-const calcNum2 = (num) => {  
+const calcNum2 = (num) => {
   let sum = 0;
   let string = num;
-  for(let symbol of string){ // проходит по элементам 
+  for (let symbol of string) { // проходит по элементам 
     sum += parseInt(symbol); // добавляет к переменной sum элементы из string
   }
   return sum;
@@ -55,12 +54,12 @@ const task1m3 = () => {
 const calcNumUnequivocal = (num) => {
   let sum = 0;
   let str = num;
-  for(let symbol of str){
-    if (sum + parseInt(symbol) <= 9){
-        sum += parseInt(symbol);
+  for (let symbol of str) {
+    if (sum + parseInt(symbol) <= 9) {
+      sum += parseInt(symbol);
     }
   }
-  return sum;  
+  return sum;
 }
 
 const task2 = () => {
@@ -70,47 +69,47 @@ const task2 = () => {
 
 // Task 3. =================================================
 const joinArrays = (arr1, arr2) => {
-  let sum = arr1.concat(arr2); 
+  let sum = arr1.concat(arr2);
   return sum;
-}  
+}
 const task3 = () => {
-  const newArray = joinArrays([1,2,3], [4,5,6]);
+  const newArray = joinArrays([1, 2, 3], [4, 5, 6]);
   console.log(newArray);
 }
 
 // Task 4. =================================================
 const getElements = (arr) => {
   let arrEven = [];
-  for(let symbol of arr){
+  for (let symbol of arr) {
     let remainder = symbol % 2;
-    if (remainder == 0){
+    if (remainder == 0) {
       arrEven.push(symbol);
     }
-  }  
+  }
   return console.log(arrEven);
-}  
-const task4 = () => {  
-  getElements([1,2,3,4,5]);
+}
+const task4 = () => {
+  getElements([1, 2, 3, 4, 5]);
 }
 
 // Task 5. =================================================
 const userData = (arr) => {
   let arrName = [];
-  for(let key of arr){
-    if (key["age"] >= 18){
-      arrName.push(key["name"]);      
+  for (let key of arr) {
+    if (key["age"] >= 18) {
+      arrName.push(key["name"]);
     } // возможно имелось ввиду вывести ключ/значение, но сделал так
-  }  
+  }
   return console.log(arrName);
-}  
-const task5 = () => {  
+}
+const task5 = () => {
   userData([
-      { id: 1, name: "Иван", age: 35 }, 
-      { id: 2, name: "Петя", age: 17 }, 
-      { id: 3, name: "Гена", age: 19 }, 
-      { id: 4, name: "Вася", age: 15 },
-      { id: 5, name: "Толя", age: 21 },
-    ]);
+    { id: 1, name: "Иван", age: 35 },
+    { id: 2, name: "Петя", age: 17 },
+    { id: 3, name: "Гена", age: 19 },
+    { id: 4, name: "Вася", age: 15 },
+    { id: 5, name: "Толя", age: 21 },
+  ]);
 }
 
 // Task 6*. =================================================
