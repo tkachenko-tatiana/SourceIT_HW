@@ -71,7 +71,38 @@ function adult_check(arr) {
                   { id: 8, name: "Fred", age: 19 }, 
                   { id: 9, name: "George", age: 59 },])
 
+	/* exercise 6*/
 
+let AddArr = function () {
+	let sum = [];
+	let i ;
+	for (i = 0; i < arguments.length; i++) {
+		sum.push(...arguments[i]);
+	};
+	console.log(sum);
+}
+AddArr([1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18],'bingo!!!')
+
+
+/*exercise 7*/
+/*first example)*/
+let str = "[(( 1 + 2) * 5) + (42).toString()}";
+function AddBrackets(){
+let bracket = 0;
+for (var i = 0; i <= str.length; i++) {
+	if (str[i] == "(" || str[i] == "[" || str[i] == "{") {
+		bracket++;
+	} else if (str[i] == ")" || str[i] == "]" || str[i] == "}") {
+		bracket--;
+	}
+}
+if(bracket == 0) {
+            console.log(true);
+        } else {
+            console.log(false);
+        }
+}
+AddBrackets()
 
 
 
