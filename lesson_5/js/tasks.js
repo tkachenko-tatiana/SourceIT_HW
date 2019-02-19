@@ -1,40 +1,33 @@
 'use strict'
 /*first exercise*/
 function calcNum(num) {
-	let a = 0;
+	let base = 0;
 	num = num + ""  ;
-	for (var i = 0; i < num.length; i++) {
-		a = a + +num[i]
+	for (var i = 0; i < num.length-1; i++) {
+		base = base + +num[i]
 	}
-	console.log(a) 
+	return(base) 
 }
-const sum = calcNum(135)
-
-
+calcNum(135)
 /*second exercise*/
-function calcNum(num) {
-	let a = 0;
-	num = num + ""  ;
-	for (var i = 0; i < num.length; i++) {
-		if(num>10){
-			a = a + +num[i]
-			console.log(calcNum(a))
-		}
-		else {
-			a = a + +num[i]
-				console.log(a) 
-		}
-	}
+function calcNum (num) {
+	let base = 0;
+    num = num + "";
+    for (let i = 0; i <= num.length-1; i++) {
+        base = base+ +num[i];
+    }
+    while(base> 10) {
+        base= calcNum(base);
+    }
+    return base;
 }
-const sum = calcNum(72313)
-
-
+calcNum(666);
 /*third exercise*/
 function joinArrays(arr1,arr2) {
  const arr3=[...arr1,...arr2]
- console.log(arr3)
+ return(arr3);
 }
-const newArray = joinArrays([1,2,3],[4,5,6])
+joinArrays([1,2,3],[4,5,6])
 
 
 /*fourth exercise*/
@@ -86,14 +79,13 @@ AddArr([1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18],'bingo!!!')
 
 /*exercise 7*/
 /*first example)*/
-let str = "[(( 1 + 2) * 5) + (42).toString()}";
-function AddBrackets(){
+function AddBrackets(str){
 let bracket = 0;
 for (var i = 0; i <= str.length; i++) {
 	if (str[i] == "(" || str[i] == "[" || str[i] == "{") {
 		bracket++;
 	} else if (str[i] == ")" || str[i] == "]" || str[i] == "}") {
-		bracket--;
+		bracket++;
 	}
 }
 if(bracket == 0) {
@@ -102,7 +94,7 @@ if(bracket == 0) {
             console.log(false);
         }
 }
-AddBrackets()
+AddBrackets("[(( 1 + 2) * 5) + (42).toString()}")
 
 
 
