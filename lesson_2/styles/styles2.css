@@ -1,0 +1,120 @@
+body {
+  font-family: sans-serif;
+}
+
+.task-one {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  background: #36c1d0;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+.wrapper div {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+}
+
+
+.one {
+  align-self: flex-start;
+  flex: 0 1 auto;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+  border: 2px solid #366bd0;
+}
+
+.two {
+  align-self: flex-start;
+  flex: 0 1 auto;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+  border: 2px solid #366bd0;
+}
+
+.three {
+  align-self: flex-start;
+  flex: 0 1 auto;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+  border: 2px solid #366bd0;
+}
+
+.four {
+  align-self: flex-start;
+  flex: 0 1 auto;
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px;
+  color: white;
+  border: 2px solid #366bd0;
+}
+
+  .five {
+    align-self: flex-start;
+    flex: 0 1 auto;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 10px;
+    color: white;
+    border: 2px solid #366bd0;
+    }
+
+    .six {
+      align-self: flex-start;
+      flex: 0 1 auto;
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      margin: 10px;
+      color: white;
+      border: 2px solid #366bd0;
+      }
+
+      .seven {
+        align-self: flex-start;
+        flex: 0 1 auto;
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        margin: 10px;
+        color: white;
+        border: 2px solid #366bd0;
+        }
+
+        .eight {
+          align-self: flex-start;
+          flex: 0 1 200px;
+          height: 100px;
+          width: 100px;
+          background-color: blue;
+          margin: 10px;
+          color: white;
+          border: 2px solid #366bd0;
+          }
+
+          .nine {
+            align-self: flex-start;
+            flex: 8 1 1000px;
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            margin: 10px;
+            color: white;
+            border: 2px solid #366bd0;
+            }
