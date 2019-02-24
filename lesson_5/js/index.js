@@ -114,7 +114,50 @@ const task5 = () => {
 
 // Task 6*. =================================================
 
+const bigArr = (...argum) => {
+  let fullArr = [];
+
+  argum.forEach((item) => item.map((num) => fullArr.push(num)));
+  
+  return fullArr;
+}
+
 const task6 = () => {
-  //  bigArr([1,2,3], [4,5,6], [7,8,9], [10,11,12], [13,14,15], [16,17,18], [19,20,21], [22,23,24]);
-  alert("В разработке :)");
+  console.log(bigArr([1,2,3], [4,5,6], [7,8,9], [10,11,12], [13,14,15], [16,17,18], [19,20,21], [22,23,24]));
+}
+
+// Task 7*. =================================================
+
+const checkBrackets = (string) => {
+
+  let brackets = '[]{}()',
+      check = [],
+      bracketsPosition,
+      element;
+
+  for(let i = 0; element = string[i]; i++){
+    bracketsPosition = brackets.indexOf(element);
+
+    if(bracketsPosition === -1) {
+      continue;
+    }
+
+    if(bracketsPosition % 2 === 0) {
+      check.push(bracketsPosition + 1);
+    } else {
+      if(check.length === 0 || check.pop() !== bracketsPosition) {
+        return false;
+      }
+    }
+
+  }
+
+  return check.length === 0;
+
+}
+
+
+const task7 = () => {
+  console.log(checkBrackets('[ ((1 + 2) * 5) + (42).toString() ] }')); // false
+  console.log(checkBrackets('[ ((1 + 2) * 5) + (42).toString() ]')); // true
 }
