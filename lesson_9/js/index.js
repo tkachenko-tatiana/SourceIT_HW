@@ -67,7 +67,32 @@ console.log('==============================================================');
 
 console.log('task_3');
 
+let calculatorNew = {
+    total: 0,
 
+    input: function input(a) {
+        this.total = a;
+        return this;
+    },
+    
+    sum: function sum(b) {
+        this.total = this.total + b;
+        return this;
+    },
+
+    mul: function mul(b) {
+        this.total = this.total * b;
+        return this;
+    },
+
+    sub: function sub(b) {
+        this.total = this.total - b;
+        return this;
+    }
+}
+
+calculatorNew.input(16).sum(27).mul(38).sub(45);
+console.log("result = " + calculatorNew.total);
 
 console.log('==============================================================');
 
