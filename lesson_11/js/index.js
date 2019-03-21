@@ -1,6 +1,6 @@
 'use strict'
 
-console.log("tast_1");
+console.log("task_1");
 
 const user = {
   name: "John Smith",
@@ -8,14 +8,14 @@ const user = {
     alert(this.name)
   },
   timeoutSayHi: function () {
-    setTimeout(user.sayHi.bind(user), 1000);
+    setTimeout(this.sayHi.bind(this), 1000);
   }
 };
 
 user.sayHi();
 user.timeoutSayHi();
 
-console.log("tast_2");
+console.log("task_2");
 
 const group = {
   users: ['student 1', 'student 2'],
@@ -30,27 +30,30 @@ const group = {
 }
 group.sayHiToAll();
 
-console.log("tast_3");
+console.log("task_3");
 
 function callWithTimer(func) {
-    return function(...args) {
-      let result = func.apply(this, args);
-      console.time('label'); 
-      console.timeEnd('label');
-      return result;
-      
-    }
+  return function(...args) {
+    console.time('label');
+    let result = func.apply(this, args);
+    console.timeEnd('label');
+    return result;
+    
   }
- 
- 
- function testFunction() {
+}
+
+
+function testFunction() {
   const arr = new Array(500).fill('test');
- 
+  
   const newArr = arr.map((el, index) => `${el}_${index}`);
   return newArr;
- }
- 
- const testFunctionWrapper = callWithTimer(testFunction);
- const result = testFunctionWrapper();
- 
- console.log('result: ', result)
+}
+
+const testFunctionWrapper = callWithTimer(testFunction);
+const result = testFunctionWrapper();
+
+console.log('result: ', result)
+
+
+
