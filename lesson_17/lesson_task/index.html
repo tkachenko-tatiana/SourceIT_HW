@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Урок 17</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        font-size: 18px;
+        color: #363435;
+        font-family: sans-serif;
+      }
+      .box__input {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        border-bottom: 10px solid#363435;
+      }
+      .box__input input,
+      .box__input button {
+        padding: 15px 25px;
+        border-radius: 15px;
+        margin: 20px;
+      }
+      .box__input input {
+        border: 1px solid #363435;
+      }
+      .box__input button {
+        background: #ff8500;
+        border: 1px solid #ff8500;
+        font-weight: bold;
+        color: #fff;
+      }
+      .box__list {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .box__list li {
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box__input">
+      <input type="text" id="list-input" value placeholder="Введите текст" />
+      <button id="list-btn">Добавить в список</button>
+    </div>
+
+    <div class="box__list">
+      <ol id="list-main"></ol>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
