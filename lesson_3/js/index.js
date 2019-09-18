@@ -6,7 +6,7 @@ if (a == 1) {
 	a = 2;
 }
 if (b == 2) {
-	b = 1
+	b = 1;
 }
 console.log('a =' + ' ' + a);
 console.log('b =' + ' ' + b);
