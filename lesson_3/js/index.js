@@ -1,19 +1,16 @@
 'use strict'
-
-let a = 1; 
-let b = 2;
-if (a == 1) {
-	a = 2;
-}
-if (b == 2) {
-	b = 1;
-}
+/*Задача 1*/
+let a = 5; 
+let b = 9;
+a = a + b;
+b = a - b;
+a = a - b;
 console.log('a =' + ' ' + a);
 console.log('b =' + ' ' + b);
 
-/*
-let numberOne = prompt('Введите первое число');
-let numberTwo = prompt('Введите второе число');
+/*Задача 2*/
+let numberOne = +prompt('Введите первое число');
+let numberTwo = +prompt('Введите второе число');
 let result;
 if (numberOne > numberTwo) {
 	result = numberOne;
@@ -22,10 +19,10 @@ if (numberOne > numberTwo) {
 } else {
 	result = 'Числа равны'
 }
-console.log(result);*/
+console.log(result);
 
-
-/*let roomNumber = prompt('Введите номер квартиры');
+/*Задача 3*/
+let roomNumber = prompt('Введите номер квартиры');
 if (roomNumber >= 1 && roomNumber <= 20) {
 	alert('Первый подъезд');
 } else if (roomNumber >= 21 && roomNumber <= 48) {
@@ -34,18 +31,18 @@ if (roomNumber >= 1 && roomNumber <= 20) {
 	alert('Третий подъезд');
 } else {
 	alert('Такой квартиры в доме нет!');
-}*/
+}
 
-
-/*let bornYear = prompt('Введите свой год рождения');
+/*Задача 4*/
+let bornYear = prompt('Введите свой год рождения');
 if (2019 - Number(bornYear) >= 16) {
 	alert('Добро пожаловать!');
 } else {
     alert('Вход запрещен!');
-}*/
+}
 
-
-/*let x = prompt('Введите значение X');
+/*Задача 5*/
+let x = prompt('Введите значение X');
 let resultFunction;
 if (x < -2) {
 	resultFunction = 3 * (+x * +x);
@@ -54,4 +51,4 @@ if (x < -2) {
 } else {
 	resultFunction = 32 + +x;
 }
-console.log('Резуальтат функции =' + ' ' + resultFunction);*/
+console.log('Резуальтат функции =' + ' ' + resultFunction);
