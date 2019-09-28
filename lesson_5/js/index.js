@@ -17,11 +17,10 @@ console.log(arr1);
 console.log(`------------------- \n Задача 3 \n-------------------`);
 let array = [1, 2, 3, 4, 5];
 let sum = 0;
-let result;
 for(let i = 0; i < array.length; i++) {
 	sum = sum + array[i];
 }
-result = sum / array.length;
+let result = sum / array.length;
 console.log(`Среднее арифметичское массива = ${result}`);
 
 /*Задача 4*/
@@ -41,9 +40,7 @@ let keys = ['key1', 'key2', 'key3', 'key4', 'key5'];
 let values = ['value1', 'value2', 'value3', 'value4', 'value5'];
 let obj = {};
 for(let i = 0; i < keys.length; i++) {
-	for(let j = 0; j < values.length; j++) {
-		obj[keys[i]] = values[j];
-	}
+		obj[keys[i]] = values[i];
 }
 console.log(obj);
 
@@ -60,7 +57,7 @@ console.log(`Всего итераций: ${iteration}`);
 
 /*Задача 7*/
 console.log(`------------------- \n Задача 7 \n-------------------`);
-function sumArguments(a, b, c, d, e, f) {
+function sumArguments() {
 	let sum = 0;
 	for(let i = 0; i < arguments.length; i++) {
 		sum = sum + arguments[i];
