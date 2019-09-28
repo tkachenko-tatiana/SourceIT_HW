@@ -22,7 +22,7 @@ if (numberOne > numberTwo) {
 console.log(result);
 
 /*Задача 3*/
-let roomNumber = prompt('Введите номер квартиры');
+let roomNumber = +prompt('Введите номер квартиры');
 if (roomNumber >= 1 && roomNumber <= 20) {
 	alert('Первый подъезд');
 } else if (roomNumber >= 21 && roomNumber <= 48) {
@@ -34,7 +34,7 @@ if (roomNumber >= 1 && roomNumber <= 20) {
 }
 
 /*Задача 4*/
-let bornYear = prompt('Введите свой год рождения');
+let bornYear = +prompt('Введите свой год рождения');
 if (2019 - Number(bornYear) >= 16) {
 	alert('Добро пожаловать!');
 } else {
@@ -42,7 +42,7 @@ if (2019 - Number(bornYear) >= 16) {
 }
 
 /*Задача 5*/
-let x = prompt('Введите значение X');
+let x = +prompt('Введите значение X');
 let resultFunction;
 if (x < -2) {
 	resultFunction = 3 * (+x * +x);
