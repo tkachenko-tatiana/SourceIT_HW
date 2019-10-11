@@ -1,3 +1,62 @@
-body {
-  font-family: sans-serif;
+/*content1*/
+.content1 {
+	justify-content: space-between;
+	flex-direction: row;
+	display: flex;
+	height: 100vh;
+	border-bottom: 1px solid #aaa;
+	padding: 50px 0;
+}
+.content1 .box {
+	background: #ffc000;
+	width: 200px;
+	height: 200px;
+}
+.content1 .box.box1, .content1 .box.box5  {
+	align-self: flex-end;
+}
+.content1 .box.box2, .content1 .box.box4  {
+	align-self: center;
+}
+/*content2*/
+.content2 {
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #aaa;
+	padding: 50px 0;
+}
+.content2 .box {
+	width: 12%;
+	height: 200px;
+	background: #ffc000;
+	margin-bottom: 10px;
+}
+.content2 .box:last-child {
+	width: 100%;
+	background: green;
+} 
+.content2 .box:first-child {
+	background: green;
+}
+/*content3*/
+.content3 {
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #aaa;
+	padding: 50px 0;
+}
+.content3 .box {
+	width: 33%;
+	height: 200px;
+	background: #ffc000;
+	margin-bottom: 10px;
+}
+.content3 .box:nth-child(2) {
+	height: 400px;
 }
