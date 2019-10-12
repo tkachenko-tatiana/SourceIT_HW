@@ -61,11 +61,7 @@ function calculateCart(items) {
 // #8
 
 function findPriceById(id, items) {
-    for (const i of items) {
-        if (id === i.id) {
-            return i.price;
-        }
-    }
+    return items.find(item => item.id === id);
 }
 
 // #9    
