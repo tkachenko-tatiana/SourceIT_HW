@@ -1,0 +1,28 @@
+.item {
+    width: 70px;
+     height: 70px;
+    display: block;
+    margin-right: 5px;
+    background: rgb(1, 1, 117);
+   margin-top: 5px;
+    padding:60px;
+    flex: auto;
+    color:white;
+   
+    
+}
+.container {
+    height: 50%;
+    width: 50%;
+    justify-content: space-between;
+    
+    
+   
+    display:flex;
+    flex-wrap:wrap;
+
+}
+ .i2{
+    width: 70px;
+    height: 200px;
+ }
