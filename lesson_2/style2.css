@@ -1,0 +1,35 @@
+.item {
+    width: 70px;
+     height: 100px;
+    display: inline-block;
+    margin-right: 5px;
+    background: yellow;
+   margin-top: 5px;
+    padding:50px;
+    flex: auto;
+   
+    
+}
+.container {
+    width:auto;
+    height:auto;
+    
+    
+    flex-wrap: wrap;
+   
+    display:flex;
+    
+    justify-content:space-between;
+}
+
+    .i1{
+        background-color:green;
+    }
+    
+  .i9{
+      background-color:green;
+  }
+
+  .i8{
+      width:100px;
+  }
