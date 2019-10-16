@@ -1,0 +1,32 @@
+.item {
+    width: 70px;
+     height: 70px;
+    display: inline-block;
+    margin-right: 5px;
+    background: yellow;
+    
+   
+    
+}
+.container {
+   
+    flex-wrap: nowrap;
+    width:500px;
+    height:500px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; 
+}
+
+.i3{
+align-self: flex-start;
+}
+
+.i2{
+    align-self:center;
+}
+
+.i4{
+    align-self: center;
+}
