@@ -1,0 +1,42 @@
+.container{
+display: flex;
+flex-direction:row;
+width: 400px;
+height: 400px;
+background-color: white;
+justify-content: space-around;
+}
+
+.one{
+width:60px;
+height:60px;
+background-color: orange;
+align-self: flex-end;
+}
+
+.two{
+width:60px;
+height:60px;
+background-color: orange;
+align-self: center;
+}
+
+.three{
+width:60px;
+height:60px;
+background-color: orange;
+}
+
+.four{
+width:60px;
+height:60px;
+background-color: orange;
+align-self: center;
+}
+
+.five{
+width:60px;
+height:60px;
+background-color: orange;
+align-self: flex-end;
+}

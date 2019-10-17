@@ -1,0 +1,64 @@
+.container{
+display: flex;
+flex-direction:row;
+width: 670px;
+height:190px;
+background-color: white;
+justify-content: space-around;
+flex-wrap:wrap;
+}
+
+.one{
+width:60px;
+height:80px;
+background-color: green;
+}
+
+.two{
+width:60px;
+height:80px;
+background-color: orange;
+}
+
+.three{
+width:60px;
+height:80px;
+background-color: orange;
+}
+
+.four{
+width:60px;
+height:80px;
+background-color: orange;
+}
+
+.five{
+width:60px;
+height:80px;
+background-color: orange;
+}
+
+.six{
+width:60px;
+height:80px;
+background-color: orange;
+}
+
+.seven{
+width:60px;
+height:80px;
+background-color: orange;
+}
+
+.eight{
+width:90px;
+height:80px;
+background-color: orange;
+}
+
+.nine{
+width:650px;
+height:80px;
+background-color: green;
+justify-content: flex-start;
+}
