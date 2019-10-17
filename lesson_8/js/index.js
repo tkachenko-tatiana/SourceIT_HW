@@ -1,18 +1,20 @@
 'use strict'
 /*Задача 1*/
 function randomInteger() {
-	let arr = [];
-	return function() {
-		let randomNumber = Math.ceil(Math.random() * 10);
+  let arr = [];
+  return function() {
+    let randomNumber = Math.ceil(Math.random() * 10);
 
-		if (arr.includes(randomNumber)) {
-			console.log('-');
-			return arr;
-		} else {
-			arr.push(randomNumber);
-		}
-		console.log(arr);
-	}
+    if (arr.includes(randomNumber)) {
+      console.log(Повтор: ${randomNumber});
+      console.log(arr);
+      arr = []
+      return arr;
+    } else {
+      arr.push(randomNumber);
+      return randomNumber;
+    }
+  }
 }
 let randomIntegerGenerator = randomInteger();
 
