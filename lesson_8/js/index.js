@@ -19,7 +19,6 @@ function randomInteger() {
 let randomIntegerGenerator = randomInteger();
 
 /*Задача 2*/
-
 function sequence(start = 0, step = 1) {
 	let counter = 0;
 	return function() {
