@@ -1,0 +1,53 @@
+.container{
+display: flex;
+flex-direction:row;
+width: 500px;
+height: 330px;
+background-color: white;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.one{
+width:140px;
+height:85px;
+background-color: orange;
+}
+
+.two{
+width:140px;
+height:190px;
+background-color: orange;
+}
+
+.three{
+width:140px;
+height:85px;
+background-color: orange;
+}
+
+.four{
+width:140px;
+height:85px;
+background-color: orange;
+}
+
+.five{
+width:140px;
+height:85px;
+background-color: orange;
+}
+
+.six{
+width:140px;
+height:85px;
+background-color: orange;
+}
+
+.color{
+background-color: darkblue;
+}
+
+.number{
+	color:white;
+}
