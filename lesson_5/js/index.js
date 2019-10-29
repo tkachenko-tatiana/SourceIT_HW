@@ -1,15 +1,16 @@
 'use strict'
+let arr = [1, 2, 3, 10, 20];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = arr[i] + 3;
+    };
 
-// задание 1
-
-let arr = [1, 2, 3];
-arr.push(4, 5);
-
+/*
 arr [0] = arr [0] +3;
 arr [1] = arr [1] +3;
 arr [2] = arr [2] +3;
 arr [3] = arr [3] +3;
 arr [4] = arr [4] +3;
+*/
 
 console.log(arr);
 
@@ -22,7 +23,7 @@ console.log(arr1);
 // задание 3
 
 let arr2 = [2, 5, 8, 10, 13, 17, 25];
-let resultSum = (arr2.reduce((sum, current) => sum + current, 0));
+let resultSum = arr2.reduce((sum, current) => sum + current, 0);
 let average = resultSum / arr2.length;
 console.log(arr2);
 console.log('Среднее арифметическое значение элементов массива ' + average.toFixed(2));
@@ -34,10 +35,14 @@ let user = {
     surname: 'Lincoln',
     age: 210
 };
+/*
 let e = ' '; //пробелы получилось вставить только таким способом
 console.log(user.name + e + user.surname + e + user.age + e + 'years');
 // или так
-alert(user.name + e + user.surname + e + user.age + e + 'years');
+alert(user.name + e + user.surname + e + user.age + e + 'years');*/
+
+let phrase = `${user.name} ${user.surname} ${user.age} years`;
+console.log(phrase);
 
 
 // задание 5
