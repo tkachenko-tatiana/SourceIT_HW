@@ -14,7 +14,7 @@ function deepClone(obj) {
   if (typeof obj === 'object') {
     return Object.keys(obj)
     .map(function(item) {return {[item] : deepClone(obj[item])}})
-    .reduce(function(item, clone) {return Object.assign(item, clone)});
+    .reduce(function(a, b) {return Object.assign(a, b)});
   } else {
     return obj;
   }
