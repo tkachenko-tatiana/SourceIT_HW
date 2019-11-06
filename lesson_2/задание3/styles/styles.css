@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+.container_main {
+	background: #77F2E4;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: ;
+	border: 1px solid #000000;
+	padding: 10px;
+	height: 600px;
+	width: 600px;
+}
+
+.item1 {
+	background-color: yellow;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 10 px;
+	height: 100px;
+	width: 100px;
+	align-self: flex-end;
+}
+
+.item2 {
+	background-color: yellow;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 10 px;
+	height: 100px;
+	width: 100px;
+	align-self: center;
+}
+
+.item3 {
+	background-color: yellow;
+	padding: 10px;
+	border: 1px solid #000000;
+	border-radius: 10 px;
+	height: 100px;
+	width: 100px;
+	align-self: flexstart;
+}
