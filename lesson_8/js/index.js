@@ -1,13 +1,15 @@
 'use strict'
+
+//1
 function makeRandom() {
     let arr = [];
     return function () {
         let randomNumber = Math.floor(Math.random() * Math.floor(11));
         if (arr.includes(randomNumber)) {
-            console.log('repeat!')
+            console.log('repeat!');
             return arr
         } else {
-            console.log(arr)
+            console.log(arr);
             arr.push(randomNumber)
         }
     }
@@ -15,9 +17,11 @@ function makeRandom() {
 
 const randomArr = makeRandom();
 
+
+//2
 function sequence(start = 0, step = 1) {
     return function () {
-        start = start + step
+        start = start + step;
         return start
     }
 }
