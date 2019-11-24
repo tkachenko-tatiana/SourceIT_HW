@@ -16,11 +16,11 @@ const spy = makeSpyOn();
 
 function makeBuffer() {
     let store;
-    return function myFunc(...value) {
-        if (value.length === 0) {
+    return function myFunc(value) {
+        if (arguments.length === 0) {
             return store;
         } else {
-            store = value[0];
+            store = value;
         }
         myFunc.reset = function () {
             store = undefined;
