@@ -2,10 +2,11 @@
 
 // #1
 
-function makeSpyOn() {
+function makeSpyOn(someFunc) {
     let num = 0;
-    return function myFunc() {
-        myFunc.calls = ++num;
+    return function innerFunc() {
+        innerFunc.calls = ++num;
+        someFunc();
     }
 }
 
