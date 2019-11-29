@@ -17,7 +17,7 @@ const spy = makeSpyOn();
 function makeBuffer() {
     let store;
     return function myFunc(value) {
-        if (arguments.length === 0) {
+        if (!value) {
             return store;
         } else {
             store = value;
