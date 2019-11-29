@@ -7,17 +7,13 @@ function randomInteger() {
 
     return function () {
         let rand = Math.ceil(Math.random() * 10);
-        arr.push(rand);
-
-        let flag = false;
-        for (let i = 0; i < arr.length - 1; i++) {
-            if (arr[i] === rand) {
-                flag = true;
-                break;
-            }
+        if (arr.includes(rand)) {
+            arr.push(rand);
+            return arr;
+        } else {
+            arr.push(rand);
+            return rand;
         }
-
-        return flag ? arr : rand;
     }
 }
 
