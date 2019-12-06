@@ -1,0 +1,42 @@
+.container{
+  display: flex;
+  flex-direction:row;
+  width: 350px;
+  height: 350px;
+  background-color: white;
+  justify-content: space-around;
+  }
+  
+  .element_1{
+  width:60px;
+  height:60px;
+  background-color: yellow;
+  align-self: flex-end;
+  }
+  
+  .element_2{
+  width:60px;
+  height:60px;
+  background-color: yellow;
+  align-self: center;
+  }
+  
+  .element_3{
+  width:60px;
+  height:60px;
+  background-color: yellow;
+  }
+  
+  .element_4{
+  width:60px;
+  height:60px;
+  background-color: yellow;
+  align-self: center;
+  }
+  
+  .element_5{
+  width:60px;
+  height:60px;
+  background-color: yellow;
+  align-self: flex-end;
+  }
